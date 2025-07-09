@@ -75,6 +75,6 @@ describe("createPlugin", () => {
     // Assert that the function returned by createPlugin is strictly the same
     // as the function that was passed in. This covers the 'return pluginFn;' line.
     expect(resultPlugin).toBe(mockPluginFn);
-    expect(typeof resultPlugin).toBeInstanceOf("function"); // Ensures it's still a function
+    expect(resultPlugin).toBeInstanceOf(Function);
   });
 });

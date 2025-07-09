@@ -1,7 +1,7 @@
 {
   "name": "@repo/root",
   "version": "0.0.0",
-  "description": "danger client monorepo",
+  "description": "A monorepo for the core libraries of Danger client.",
   "type": "module",
   "packageManager": "pnpm@9.15.0",
   "scripts": {
@@ -65,7 +65,13 @@
       "output": []
     }
   },
-  "keywords": [],
+  "keywords": [
+    "ci",
+    "cd",
+    "review-tools",
+    "danger-plugin",
+    "danger-js"
+  ],
   "license": "MIT",
   "devDependencies": {
     "@changesets/changelog-github": "^0.5.1",

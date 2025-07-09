@@ -7,6 +7,11 @@
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "type": "module",
+  "files": [
+    "./dist",
+    "./README.md",
+    "./LICENSE"
+  ],
   "scripts": {
     "clear": "shx rm -rf dist",
     "prebuild": "pnpm run clear",
@@ -30,7 +35,13 @@
       ]
     }
   },
-  "keywords": [],
+  "keywords": [
+    "ci",
+    "cd",
+    "review-tools",
+    "danger-plugin",
+    "danger-js"
+  ],
   "license": "MIT",
   "peerDependencies": {
     "danger": "^13.0.4"
