@@ -1,0 +1,16 @@
+{
+  "$schema": "https://unpkg.com/@changesets/config@3.1.1/schema.json",
+  "changelog": [
+    "@changesets/changelog-github",
+    {
+      "repo": "Tap30/danger"
+    }
+  ],
+  "commit": false,
+  "fixed": [],
+  "access": "public",
+  "baseBranch": "main",
+  "bumpVersionsWithWorkspaceProtocolOnly": true,
+  "prettier": false,
+  "updateInternalDependencies": "patch"
+}

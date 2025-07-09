@@ -1,0 +1,38 @@
+{
+  "name": "@tapsioss/danger",
+  "version": "0.0.0",
+  "description": "An extensible framework for integrating DangerJS declaratively.",
+  "packageManager": "pnpm@9.15.0",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "clear": "shx rm -rf dist",
+    "prebuild": "pnpm run clear",
+    "build": "wireit",
+    "release": "pnpm publish . --tag latest --access public --no-git-checks",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "wireit": {
+    "build": {
+      "command": "tsup",
+      "files": [
+        "./tsconfig.json",
+        "./tsup.config.ts",
+        "./src/**/*",
+        "!./src/**/*.test.{ts,tsx}"
+      ],
+      "output": [
+        "./dist/**/*"
+      ]
+    }
+  },
+  "keywords": [],
+  "license": "MIT",
+  "peerDependencies": {
+    "danger": "^13.0.4"
+  }
+}
