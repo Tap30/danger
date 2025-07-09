@@ -30,7 +30,13 @@
       ]
     }
   },
-  "keywords": [],
+  "keywords": [
+    "ci",
+    "cd",
+    "review-tools",
+    "danger-plugin",
+    "danger-js"
+  ],
   "license": "MIT",
   "peerDependencies": {
     "danger": "^13.0.4"

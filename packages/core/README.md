@@ -5,9 +5,9 @@
 An extensible framework for integrating [Danger.js](https://danger.systems/js/)
 declaratively.
 
-</div\>
+</div>
 
-<hr /\>
+<hr />
 
 ## Installation
 
